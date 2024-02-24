@@ -1,12 +1,11 @@
 #!/bin/bash
 
+
 #check if ./script_sample_folder exists in case not, create it
-if [ -d ./script_sample_folder ]
+if [ ! -d ./script_sample_folder ]
 then
-    echo
-else
     ./dir_spammer.sh
-fi 
+fi  
 
 if [ "$#" == 0 ]
 then
